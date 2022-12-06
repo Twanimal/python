@@ -1,3 +1,13 @@
+import pathlib
+import sys
+
+# This adds the path of the …/src folder
+# to the PYTHONPATH variable
+sys.path.append(str(pathlib.Path().absolute()).split("/src")[0] + "/src")
+
+import streamlit as st
+from mymodule.loader import get_name
+
 # Import necessary libraries
 import pandas as pd
 import streamlit as st
